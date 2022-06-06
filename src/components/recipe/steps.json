@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_recipe_steps",
+  "info": {
+    "displayName": "steps",
+    "icon": "carrot",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "guideline": {
+      "type": "text"
+    },
+    "step_number": {
+      "type": "integer"
+    }
+  }
+}

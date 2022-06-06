@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "utensils",
+  "info": {
+    "singularName": "utensil",
+    "pluralName": "utensils",
+    "displayName": "Utensil",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "recipes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::recipe.recipe",
+      "mappedBy": "utensils"
+    }
+  }
+}

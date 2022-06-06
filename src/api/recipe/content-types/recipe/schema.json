@@ -21,14 +21,49 @@
       "required": false
     },
     "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "recipes"
+    },
+    "ingredients": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::ingredient.ingredient",
+      "inversedBy": "recipes"
+    },
+    "utensils": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::utensil.utensil",
+      "inversedBy": "recipes"
+    },
+    "Steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recipe.steps"
+    },
+    "profiles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::profile.profile",
+      "inversedBy": "recipes"
+    },
+    "time_duration": {
+      "type": "component",
+      "repeatable": false,
+      "component": "recipe.duration"
     }
   }
 }

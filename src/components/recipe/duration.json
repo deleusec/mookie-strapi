@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_recipe_durations",
+  "info": {
+    "displayName": "duration",
+    "icon": "clock",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "duration": {
+      "type": "integer"
+    },
+    "time_unit": {
+      "type": "enumeration",
+      "enum": [
+        "min",
+        "h"
+      ]
+    }
+  }
+}

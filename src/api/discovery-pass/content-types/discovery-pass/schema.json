@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discovery_passes",
+  "info": {
+    "singularName": "discovery-pass",
+    "pluralName": "discovery-passes",
+    "displayName": "DiscoveryPass",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "begin_date": {
+      "type": "datetime"
+    },
+    "end_date": {
+      "type": "datetime"
+    },
+    "titre": {
+      "type": "string"
+    },
+    "profiles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::profile.profile",
+      "inversedBy": "discovery_passes"
+    }
+  }
+}
