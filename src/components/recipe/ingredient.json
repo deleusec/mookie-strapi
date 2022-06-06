@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_recipe_ingredients",
+  "info": {
+    "displayName": "Ingredient",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ingredient": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ingredient.ingredient"
+    },
+    "quantity": {
+      "type": "string"
+    }
+  }
+}

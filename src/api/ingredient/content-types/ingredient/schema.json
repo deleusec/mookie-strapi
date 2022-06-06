@@ -20,12 +20,6 @@
       ],
       "type": "media",
       "multiple": false
-    },
-    "recipes": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::recipe.recipe",
-      "mappedBy": "ingredients"
     }
   }
 }
