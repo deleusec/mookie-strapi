@@ -26,6 +26,20 @@
       "relation": "manyToMany",
       "target": "api::profile.profile",
       "inversedBy": "discovery_passes"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "recipes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::recipe.recipe",
+      "inversedBy": "discovery_passes"
     }
   }
 }
