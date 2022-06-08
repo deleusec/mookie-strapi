@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_discovery_pass_recipes",
+  "info": {
+    "displayName": "recipes",
+    "icon": "sticky-note"
+  },
+  "options": {},
+  "attributes": {
+    "free_recipes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recipe.recipe"
+    },
+    "premium_recipes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recipe.recipe"
+    }
+  }
+}

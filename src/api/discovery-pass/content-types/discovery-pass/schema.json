@@ -40,6 +40,17 @@
       "relation": "manyToMany",
       "target": "api::recipe.recipe",
       "inversedBy": "discovery_passes"
+    },
+    "Gift": {
+      "type": "component",
+      "repeatable": true,
+      "component": "discovery-pass.gift",
+      "max": 3
+    },
+    "Recipes": {
+      "type": "component",
+      "repeatable": false,
+      "component": "discovery-pass.recipes"
     }
   }
 }

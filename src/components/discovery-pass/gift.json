@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_discovery_pass_gifts",
+  "info": {
+    "displayName": "Gift",
+    "icon": "gift"
+  },
+  "options": {},
+  "attributes": {
+    "gift": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::gift.gift"
+    }
+  }
+}
