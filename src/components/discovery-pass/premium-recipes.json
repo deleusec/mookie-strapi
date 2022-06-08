@@ -1,13 +1,12 @@
 {
-  "collectionName": "components_discovery_pass_recipes",
+  "collectionName": "components_discovery_pass_premium_recipes",
   "info": {
-    "displayName": "FreeRecipes",
-    "icon": "sticky-note",
-    "description": ""
+    "displayName": "PremiumRecipes",
+    "icon": "apple-alt"
   },
   "options": {},
   "attributes": {
-    "free_recipe": {
+    "recipe": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::recipe.recipe"

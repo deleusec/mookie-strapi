@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "pseudo": {
       "type": "string"
     },
     "users_permissions_user": {
@@ -32,6 +32,27 @@
       "relation": "manyToMany",
       "target": "api::discovery-pass.discovery-pass",
       "mappedBy": "profiles"
+    },
+    "tokens": {
+      "type": "integer"
+    },
+    "genre": {
+      "type": "enumeration",
+      "enum": [
+        "female",
+        "male"
+      ]
+    },
+    "age": {
+      "type": "integer",
+      "max": 99
+    },
+    "diet": {
+      "type": "enumeration",
+      "enum": [
+        "végétarien",
+        "sans gluten"
+      ]
     }
   }
 }

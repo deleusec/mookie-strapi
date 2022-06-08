@@ -35,22 +35,27 @@
         "images"
       ]
     },
-    "recipes": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::recipe.recipe",
-      "inversedBy": "discovery_passes"
-    },
-    "Gift": {
+    "Gifts": {
       "type": "component",
       "repeatable": true,
       "component": "discovery-pass.gift",
       "max": 3
     },
-    "Recipes": {
+    "FreeRecipes": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "discovery-pass.recipes"
+    },
+    "PremiumRecipes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "discovery-pass.premium-recipes"
+    },
+    "users_premium": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "discovery_passes"
     }
   }
 }

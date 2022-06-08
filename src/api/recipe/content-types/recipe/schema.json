@@ -54,7 +54,7 @@
       "target": "api::profile.profile",
       "inversedBy": "recipes"
     },
-    "time_duration": {
+    "cooking_duration": {
       "type": "component",
       "repeatable": false,
       "component": "recipe.duration"
@@ -69,11 +69,15 @@
       "repeatable": true,
       "component": "recipe.ingredient"
     },
-    "discovery_passes": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::discovery-pass.discovery-pass",
-      "mappedBy": "recipes"
+    "rest_duration": {
+      "type": "component",
+      "repeatable": false,
+      "component": "recipe.duration"
+    },
+    "preparation_duration": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recipe.duration"
     }
   }
 }
