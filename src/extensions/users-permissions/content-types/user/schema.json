@@ -68,12 +68,6 @@
       "relation": "oneToMany",
       "target": "api::profile.profile",
       "mappedBy": "users_permissions_user"
-    },
-    "discovery_passes": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::discovery-pass.discovery-pass",
-      "mappedBy": "users_premium"
     }
   }
 }

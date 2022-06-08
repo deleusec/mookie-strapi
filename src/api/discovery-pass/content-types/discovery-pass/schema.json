@@ -51,11 +51,11 @@
       "repeatable": true,
       "component": "discovery-pass.premium-recipes"
     },
-    "users_premium": {
+    "premium_profiles": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "discovery_passes"
+      "target": "api::profile.profile",
+      "inversedBy": "premium_passes"
     }
   }
 }

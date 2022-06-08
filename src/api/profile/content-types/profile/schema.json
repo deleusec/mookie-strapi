@@ -53,6 +53,12 @@
         "végétarien",
         "sans gluten"
       ]
+    },
+    "premium_passes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::discovery-pass.discovery-pass",
+      "inversedBy": "premium_profiles"
     }
   }
 }
